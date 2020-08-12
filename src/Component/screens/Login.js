@@ -7,7 +7,7 @@ import React, { useContext, useState } from 'react';
 
 function Login() {
        return (
-        <div>
+        <div style={{ height: "100vh", width: "100%", overflow: "hidden" }}>
             <div className="container">
                 <div style={{marginTop:"10vh"}} className="row justify-content-center">
                     <div className="col-12 text-center d-flex justify-content-center" style={{color:"white"}}><h3>SingUp</h3></div>
