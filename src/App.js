@@ -1,9 +1,12 @@
-import React from 'react';
+import React,{useState} from 'react';
 import {makeStyles} from '@material-ui/core' 
 import Login from './Component/screens/Login'
+import SplashScreen from './Component/screens/splashScreen'
 import Singup from './Component/screens/Signup'
-import {Drawer,List,ListItem,ListItemText,ListItemIcon} from '@material-ui/core'
+import {Drawer,Divider,List,ListItem,ListItemText,ListItemIcon} from '@material-ui/core'
 import HomeIcon from '@material-ui/icons/Home'
+import SingupCouple from './Component/screens/SingupCouple'
+import Profile from './Component/screens/profile'
 import {
   BrowserRouter as Router,
   Switch,
@@ -12,30 +15,165 @@ import {
 } from "react-router-dom";
 import './App.css';
 // import classes from '*.module.css';
+
 const usestyle= makeStyles((theme)=>({
-drawerPaper:{width:"inherit"}
+  drawerPaper:{width:"inherit"}
 }))
 function App() {
-  const classes=usestyle()
+  // const [drawerstate,setdrawerstate]=useState(false)
+
+  // const classes=usestyle()
   return (
-    <div className="globalcolor" >
+
 <Router>
-  <Drawer style={{width:"240px"}} variant="persistent" anchor="left" open={true} classes={{paper:classes.drawerPaper}}>
-<ListItem>
-  <ListItemIcon>
-    <HomeIcon/>
-  </ListItemIcon>
-  <ListItemText primary="Home"/>
-</ListItem>
+<div className="globalcolor">
+<Switch>
+          <Route exact path="/">
+            <SplashScreen />
+          </Route>
+          <Route exact path="/Login">
+            <Login />
+          </Route>
+          <Route exact path="/Login">
+            <Login />
+          </Route>
+          <Route exact path="/Singup">
+            <Singup />
+          </Route>
+
+          <Route exact path="/Profile">
+            <Profile />
+          </Route>
+          {/* <Route path="/">
+            <Home />
+          </Route> */}
+        </Switch>
+      </div>
+    </Router>
 
 
 
 
-  </Drawer>
-</Router>
-{/* <Singup/> */}
-   </div>
   );
 }
 
 export default App;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//     <div  >
+// <h1>oioijfij</h1>
+// <Router>
+  {/* <Drawer style={{width:"240px"}} variant="persistent" anchor="left" open={drawerstate} classes={{paper:classes.drawerPaper}}>
+  <Divider/>
+
+  <ListItem button>
+  <ListItemIcon style={{marginLeft:"90%"}}>
+   <HomeIcon/>
+  </ListItemIcon>
+
+</ListItem>
+<ListItem button>
+  <ListItemIcon >
+    <HomeIcon/>
+  </ListItemIcon>
+  <ListItemText primary="Home"/>
+</ListItem>
+<Divider/>
+
+
+
+  </Drawer> */}
+
+// {/* <Singup/> */}
+
+
+
+
+
+
+
+
+
+

@@ -1,10 +1,6 @@
 import React, { useContext, useState } from 'react';
 import Form from 'react-bootstrap/Form'
-import {
-    
-    Link
-  } from "react-router-dom";
-function SingUp() {
+function SingupCouple() {
     const [name, setname] = useState('')
     const [fname, setfname] = useState('')
     const [cnic, setcnic] = useState('')
@@ -61,9 +57,9 @@ function SingUp() {
                             <input onChange={(e) => { setpassword(e.target.value) }} type="password"  className="form-control" placeholder="Enter password" />
                         </div>
 
-                        <button type="submit"className=" btn-block" style={{height:"40px",borderRadius:"5%",marginTop:"5%",backgroundColor:"#9a201b",color:"white",fontSize:"120%",borderLeft:"2px solid #9a201b",borderRight:"2px solid #9a201b",borderBottom:"2px solid #9a201b",borderTop:"2px solid #9a201b"}}>Sign Up</button>
+                        <button type="submit"className="btn btn-primary btn-block" style={{marginTop:"2%"}}>Sign Up</button>
                         <p className="forgot-password text-right" style={{color:"white"}}>
-                            Already registered <Link to="/Login" style={{color:"white",textDecoration:"underline"}}>Please Login</Link>
+                            Already registered <a href="#">sign in?</a>
                         </p>
 
                     </div>
@@ -73,4 +69,4 @@ function SingUp() {
     )
 
 }
-export default SingUp;
+export default SingupCouple;
