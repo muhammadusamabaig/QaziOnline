@@ -81,7 +81,7 @@ export default function SingupDrawer() {
   );
 
   return (
-    <div className="row  justify-content-center" style={{marginTop:"2%"}}>
+    <div className="row  justify-content-center">
       {['bottom'].map((anchor) => (
         <React.Fragment key={anchor}>
             

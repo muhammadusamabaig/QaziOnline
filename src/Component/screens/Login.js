@@ -13,7 +13,7 @@ function Login() {
         <div className="globalcolor" style={{ height: "100vh", width: "100%", overflow: "hidden" }}>
             <div className="container">
                 <div style={{marginTop:"50%"}} className="row justify-content-center">
-                    <div className="col-12 text-center d-flex justify-content-center" style={{color:"white"}}><h3>Login</h3></div>
+                    <div className="col-12 text-center " style={{color:"white"}}><h3>Login</h3></div>
                     <form className="col-10 " style={{paddingBottom:"6%"}}>
 
 
@@ -27,6 +27,11 @@ function Login() {
                         <div>
                             <label style={{color:"white"}}>Password</label>
                             <input type="password"  className="form-control" placeholder="Enter password" />
+                        </div>
+                        <div>
+                        <input type="radio"  /> <label style={{color:"white"}}>Qazi</label> 
+                        <input type="radio" style={{marginLeft:"4%",fontSize:"20%"}} /> <label style={{color:"white"}}>Couple Person</label> 
+
                         </div>
 
                       <Link to="/Profile" className=" btn-block text-center" style={{height:"40px",marginTop:'5%',borderRadius:"5%",backgroundColor:"#9a201b",color:"white",fontSize:"120%",borderLeft:"2px solid #9a201b",borderRight:"2px solid #9a201b",borderBottom:"2px solid #9a201b",borderTop:"2px solid #9a201b"}}> Login

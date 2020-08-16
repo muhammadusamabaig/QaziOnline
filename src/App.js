@@ -2,10 +2,9 @@ import React,{useState} from 'react';
 import {makeStyles} from '@material-ui/core' 
 import Login from './Component/screens/Login'
 import SplashScreen from './Component/screens/splashScreen'
-import Singup from './Component/screens/Signup'
+import SingupQazi from './Component/screens/SignupQazi'
 import {Drawer,Divider,List,ListItem,ListItemText,ListItemIcon} from '@material-ui/core'
 import HomeIcon from '@material-ui/icons/Home'
-import SingupCouple from './Component/screens/SingupCouple'
 import Profile from './Component/screens/profile'
 import {
   BrowserRouter as Router,
@@ -38,8 +37,9 @@ function App() {
             <Login />
           </Route>
           <Route exact path="/Singup">
-            <Singup />
+            <SingupQazi />
           </Route>
+          
 
           <Route exact path="/Profile">
             <Profile />

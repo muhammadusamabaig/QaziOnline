@@ -1,10 +1,13 @@
 import React, { useContext, useState } from 'react';
 import Form from 'react-bootstrap/Form'
+import SingupCouple from './SingupCouple'
+
 import {
-    
+
     Link
+
   } from "react-router-dom";
-function SingUp() {
+function SingupQazi() {
     const [name, setname] = useState('')
     const [fname, setfname] = useState('')
     const [cnic, setcnic] = useState('')
@@ -14,10 +17,10 @@ function SingUp() {
     const [password, setpassword] = useState('')
     const [selectpersone, setselectpersone] = useState('')
     return (
-        <div className="globalcolor" style={{ height: "100vh", width: "100%", overflow: "hidden" }}>
+        <div className="globalcolor" style={{ height: "110vh", width: "100%", overflow: "hidden" }}>
             <div className="container">
                 <div className="row justify-content-center">
-                    <div className="col-12 text-center" style={{color:"white"}}><h3>SingUp</h3></div>
+                    <div className="col-12 text-center" style={{color:"white"}}><h3>SingUp Qazi</h3></div>
                     <div className="col-10 ">
                         
                     <div >
@@ -61,7 +64,13 @@ function SingUp() {
                             <input onChange={(e) => { setpassword(e.target.value) }} type="password"  className="form-control" placeholder="Enter password" />
                         </div>
 
-                        <button type="submit"className=" btn-block" style={{height:"40px",borderRadius:"5%",marginTop:"5%",backgroundColor:"#9a201b",color:"white",fontSize:"120%",borderLeft:"2px solid #9a201b",borderRight:"2px solid #9a201b",borderBottom:"2px solid #9a201b",borderTop:"2px solid #9a201b"}}>Sign Up</button>
+<input  type="file" style={{backgroundColor:"transparent",marginTop:"2%",borderColor:" 2px solid white",color:"white"}} className="form-control" placeholder="Enter password" />
+
+                       
+
+                        <Link to="/Login" className=" btn-block text-center" style={{height:"40px",borderRadius:"5%",textDecoration:"none",marginTop:"5%",backgroundColor:"#9a201b",color:"white",fontSize:"120%",borderLeft:"2px solid #9a201b",borderRight:"2px solid #9a201b",borderBottom:"2px solid #9a201b",borderTop:"2px solid #9a201b",color:"white"}}>
+                            SingUp
+                        </Link>
                         <p className="forgot-password text-right" style={{color:"white"}}>
                             Already registered <Link to="/Login" style={{color:"white",textDecoration:"underline"}}>Please Login</Link>
                         </p>
@@ -69,8 +78,9 @@ function SingUp() {
                     </div>
                 </div>
             </div>
+            {/* <SingupCouple/> */}
         </div>
     )
 
 }
-export default SingUp;
+export default SingupQazi;
