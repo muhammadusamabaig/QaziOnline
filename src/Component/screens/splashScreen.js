@@ -14,8 +14,12 @@ function SplashScreen() {
             </div>
 
 
+ 
+ 
+ 
             <div className="row justify-content-center" style={{height:"8vh"}}>
-              <Link className="col-10 text-center"  type="submit" style={{height:"40px",borderRadius:"5%",backgroundColor:"#9a201b",color:"white",fontSize:"120%",borderLeft:"2px solid #9a201b",borderRight:"2px solid #9a201b",borderBottom:"2px solid #9a201b",borderTop:"2px solid #9a201b"}} to="/Login">login</Link>
+
+               <Link className="col-10 text-center"  type="submit" style={{height:"40px",borderRadius:"5%",backgroundColor:"#9a201b",color:"white",fontSize:"120%",borderLeft:"2px solid #9a201b",borderRight:"2px solid #9a201b",borderBottom:"2px solid #9a201b",borderTop:"2px solid #9a201b"}} to="/Login">login</Link>
 
             </div>
 
