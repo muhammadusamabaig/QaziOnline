@@ -8,7 +8,7 @@ import {
 function SplashScreen() {
        return (
         <div style={{height:"100vh" ,width:"100%",overflow:"hidden"}}>
-          <div className="row" style={{height:"70vh",border:"2px solid"}}>
+          <div className="row" style={{height:"70vh"}}>
           <img class="mx-auto my-auto" style={{width:"160px",borderRadius:"100%"}} src="//placehold.it/100"/>  
 
             </div>
